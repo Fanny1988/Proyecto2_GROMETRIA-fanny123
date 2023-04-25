@@ -10,7 +10,7 @@ def singleton(cls):                        #clse singlenton,
         if cls not in instances:          # si la clase no esta en las instamcias, enla instancia va a agregar instancia de clases,
             instances[cls]=cls(*args, **kwargs)
             ingresar()                              #llama a la funcion inglesar, la cual entra por medio de una instancia
-        return instances[cls]                          # SE RETORNA a ls classe
+        return instances[cls]                          # SE RETORNA a la classe
     return wrap
 
 @singleton
