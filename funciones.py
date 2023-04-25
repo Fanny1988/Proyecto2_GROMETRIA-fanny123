@@ -1,8 +1,8 @@
 import os
 
 #tupla de tipo estudiante
-listaRegistro=[]
-#onjecto persona para el logeo
+listaRegistro=[]         #lista ordenada de registros
+#onjecto persona para el logeo con admin y pass
 class Person():
   def __init__(self, name, password):
     self.name = name

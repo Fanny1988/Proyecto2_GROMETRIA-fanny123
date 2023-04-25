@@ -1,5 +1,3 @@
-Fanny,uabu,Cuadrado
-Fanny,uabu,Cuadrado
-Fanny,uabu,Cuadrado
-Fanny,uabu,Cuadrado
-Fanny,uabu,Cuadrado
+Fanny,Ubau,Cuadrado
+pedro,Morales,Triangulo
+Rosa,Ortiz,Cuadrado

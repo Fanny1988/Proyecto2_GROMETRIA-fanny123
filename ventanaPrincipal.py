@@ -9,7 +9,7 @@ import funciones
 def DatosBntCargar():               #funcion
     nombre = txtNombre.get()
     seccion=txtSeccion.get()
-    data = str(combo.get())            3recuperer datos de esta funcion
+    data = str(combo.get())           # recuperar datos de esta funcion
 
     #se validan los datos no esten vacios
     if data!='' and nombre!='' and seccion!='':               #aqui decimos que si data,nombre, seccion son diferentes de vacio
@@ -82,25 +82,28 @@ def ListaCombo():
     clearComboBox()
     LeerRegistros()
     #para obtener la longitud
-    matriz = [["","",""]]*len(listaRegistro)              matriz con 3 posisiciones que representan la posicion de la fincion estudiante
-    vectorNombre=[]
+    matriz = [["","",""]]*len(listaRegistro)             # matriz con 3 posisiciones que representan la posicion de la fincion estudiante
+    vectorNombre=[]                         # se inician estos vectores de nombre y seccion
     vectorSeccion=[]
     #se inicia un contador en cero
     contador = 0 #para poder moverse en la matriz
-    for n in listaRegistro:
+    for n in listaRegistro:                                             #iterando sobre la lista,
+
         #se recorre la lista y se almacenan en una matriz
-        Estudiant e=n
-        matriz[contador] = [Estudiante.name,Estudiante.seccion,Estudiante.operacion]
-        vectorNombre.append(Estudiante.name)
-        vectorSeccion.append(Estudiante.seccion)
-        contador=contador+1
+        Estudiante=n                                                             #donde estudiante =n
+        matriz[contador] = [Estudiante.name,Estudiante.seccion,Estudiante.operacion]       #aqaui usamos el objeto estudiante para llenar esta matriz
+        vectorNombre.append(Estudiante.name)                                      #aqui le agregamos al vector nombre(estudisnte,name
+        vectorSeccion.append(Estudiante.seccion)                                       # aqui tambien
+        contador=contador+1                                                        #incrementamos con un contador
     #la matriz alimenta los valores de cada combobox con los vectores
-    comboA['values'] = vectorNombre
+    comboA['values'] = vectorNombre                                          # los combo A y B los llenamos con los vetores
     comboB['values'] =vectorSeccion
 
 def clearComboBox():
     comboA.configure(values=())
 
+
+ #configuracion de la parte visual
 root = Tk()
 
 # Configuración de la ventana secundaria registrar Estudiante
