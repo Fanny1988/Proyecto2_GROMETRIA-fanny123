@@ -14,7 +14,7 @@ def singleton(cls):                        #clse singlenton,
     return wrap
 
 @singleton
-class Admin():
+class Admin():  #Clase
   pass
 
 root = Tk()   # sirvepara tener ventana
